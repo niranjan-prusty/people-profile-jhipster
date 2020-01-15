@@ -1,0 +1,220 @@
+{
+    "name": "WrkfrcCoreCf",
+    "fields": [
+        {
+            "fieldName": "wrkfrcUniqIdVal",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "crtdDt",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "mdfdD",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "frstNm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sevFrstNm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "midlNm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "secLastNm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lastNm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "wrkfrcPrfrdNm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "wrkfrcPrfrdLm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pstnTtlNm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "scrtrId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sctrNm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "divsnId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "divsnNm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "rgnId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "rgnNm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "buId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "buNm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "muId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "muNm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "jobFnctnCdv",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "jobFnctnNm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "jobSbfnctnCdv",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "jobSbfnctnNm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "mngrId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "busDeskTelnm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "busCellTelnm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "faxTelnm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "wrkfrcEmailAddrVal",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "locNm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "locAddrLn1Txt",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "locAddrLn2Txt",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "locAddrLn3Txt",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "locAddrLn4Txt",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "locCityNm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "locPstlAreaVal",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "locTerrCdv",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "locTerrNm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "locCtryCdv",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "locCtryNm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cntrctrWrksiteCtryVal",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "locTmznNm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "langPrfrdIsoNm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "wrkfrcHireDt",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "wrkfrcOrignlHireDt",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "wrkfrcCoreCfExtn",
+            "otherEntityRelationshipName": "wrkfrcCoreCf",
+            "relationshipName": "wrkfrcCoreCfExtn",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "wrkfrcCoreCf",
+            "otherEntityRelationshipName": "wrkfrcCoreCf",
+            "relationshipName": "wrkfrcCoreCf",
+            "otherEntityField": "mngrId"
+        }
+    ],
+    "changelogDate": "20200115174838",
+    "javadoc": "The Employee entity.",
+    "entityTableName": "wrkfrc_core_cf",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "PeopleProfileMicroservices",
+    "applications": [
+        "people"
+    ],
+    "microserviceName": "PeopleProfileMicroservices"
+}

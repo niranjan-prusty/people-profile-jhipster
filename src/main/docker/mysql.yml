@@ -1,13 +1,13 @@
 version: '2'
 services:
-  peopleprofilemicroservices-mysql:
+  people-mysql:
     image: mysql:8.0.18
     # volumes:
-    #     - ~/volumes/jhipster/PeopleProfileMicroservices/mysql/:/var/lib/mysql/
+    #     - ~/volumes/jhipster/people/mysql/:/var/lib/mysql/
     environment:
       - MYSQL_USER=root
       - MYSQL_ALLOW_EMPTY_PASSWORD=yes
-      - MYSQL_DATABASE=peopleprofilemicroservices
+      - MYSQL_DATABASE=people
     ports:
       - 3306:3306
     command: mysqld --lower_case_table_names=1 --skip-ssl --character_set_server=utf8mb4 --explicit_defaults_for_timestamp

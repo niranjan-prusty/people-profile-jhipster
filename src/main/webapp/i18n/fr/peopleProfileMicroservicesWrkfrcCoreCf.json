@@ -1,0 +1,69 @@
+{
+  "peopleApp": {
+    "peopleProfileMicroservicesWrkfrcCoreCf": {
+      "home": {
+        "title": "WrkfrcCoreCfs",
+        "createLabel": "Créer un nouveau Wrkfrc Core Cf",
+        "createOrEditLabel": "Créer ou éditer un Wrkfrc Core Cf",
+        "notFound": "Aucun Wrkfrc Core Cf trouvé"
+      },
+      "created": "Un nouveau Wrkfrc Core Cf a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Wrkfrc Core Cf avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Wrkfrc Core Cf avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Wrkfrc Core Cf {{ id }} ?"
+      },
+      "detail": {
+        "title": "Wrkfrc Core Cf"
+      },
+      "wrkfrcUniqIdVal": "Wrkfrc Uniq Id Val",
+      "crtdDt": "Crtd Dt",
+      "mdfdD": "Mdfd D",
+      "frstNm": "Frst Nm",
+      "sevFrstNm": "Sev Frst Nm",
+      "midlNm": "Midl Nm",
+      "secLastNm": "Sec Last Nm",
+      "lastNm": "Last Nm",
+      "wrkfrcPrfrdNm": "Wrkfrc Prfrd Nm",
+      "wrkfrcPrfrdLm": "Wrkfrc Prfrd Lm",
+      "pstnTtlNm": "Pstn Ttl Nm",
+      "scrtrId": "Scrtr Id",
+      "sctrNm": "Sctr Nm",
+      "divsnId": "Divsn Id",
+      "divsnNm": "Divsn Nm",
+      "rgnId": "Rgn Id",
+      "rgnNm": "Rgn Nm",
+      "buId": "Bu Id",
+      "buNm": "Bu Nm",
+      "muId": "Mu Id",
+      "muNm": "Mu Nm",
+      "jobFnctnCdv": "Job Fnctn Cdv",
+      "jobFnctnNm": "Job Fnctn Nm",
+      "jobSbfnctnCdv": "Job Sbfnctn Cdv",
+      "jobSbfnctnNm": "Job Sbfnctn Nm",
+      "mngrId": "Mngr Id",
+      "busDeskTelnm": "Bus Desk Telnm",
+      "busCellTelnm": "Bus Cell Telnm",
+      "faxTelnm": "Fax Telnm",
+      "wrkfrcEmailAddrVal": "Wrkfrc Email Addr Val",
+      "locNm": "Loc Nm",
+      "locAddrLn1Txt": "Loc Addr Ln 1 Txt",
+      "locAddrLn2Txt": "Loc Addr Ln 2 Txt",
+      "locAddrLn3Txt": "Loc Addr Ln 3 Txt",
+      "locAddrLn4Txt": "Loc Addr Ln 4 Txt",
+      "locCityNm": "Loc City Nm",
+      "locPstlAreaVal": "Loc Pstl Area Val",
+      "locTerrCdv": "Loc Terr Cdv",
+      "locTerrNm": "Loc Terr Nm",
+      "locCtryCdv": "Loc Ctry Cdv",
+      "locCtryNm": "Loc Ctry Nm",
+      "cntrctrWrksiteCtryVal": "Cntrctr Wrksite Ctry Val",
+      "locTmznNm": "Loc Tmzn Nm",
+      "langPrfrdIsoNm": "Lang Prfrd Iso Nm",
+      "wrkfrcHireDt": "Wrkfrc Hire Dt",
+      "wrkfrcOrignlHireDt": "Wrkfrc Orignl Hire Dt",
+      "wrkfrcCoreCfExtn": "Wrkfrc Core Cf Extn",
+      "wrkfrcCoreCf": "Wrkfrc Core Cf"
+    }
+  }
+}

@@ -15,10 +15,10 @@
 
 spring:
   application:
-    name: PeopleProfileMicroservices
+    name: people
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:mem:PeopleProfileMicroservices;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:mem:people;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     name:
     username:
     password:
@@ -55,13 +55,13 @@ spring:
       enabled: false
   task:
     execution:
-      thread-name-prefix: people-profile-microservices-task-
+      thread-name-prefix: people-task-
       pool:
         core-size: 1
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: people-profile-microservices-scheduling-
+      thread-name-prefix: people-scheduling-
       pool:
         size: 1
   thymeleaf:
@@ -79,7 +79,7 @@ server:
 
 jhipster:
   clientApp:
-    name: 'peopleProfileMicroservicesApp'
+    name: 'peopleApp'
   logging:
     # To test json console appender
     use-json-format: true # By default, logs are in Json format
@@ -88,6 +88,9 @@ jhipster:
       host: localhost
       port: 5000
       queue-size: 512
+  mail:
+    from: test@localhost
+    base-url: http://127.0.0.1:8080
   security:
     authentication:
       jwt:

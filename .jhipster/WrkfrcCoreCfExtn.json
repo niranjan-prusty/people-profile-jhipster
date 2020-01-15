@@ -1,0 +1,127 @@
+{
+    "name": "WrkfrcCoreCfExtn",
+    "fields": [
+        {
+            "fieldName": "idFk",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "funGroup",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "building",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "floor",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "mailDrop",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "assistant",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "altContactMobile",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "altContactEmail",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "altContactName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "altPhoneNum",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "altLocNm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ergMemberships",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pepsicoNetworks",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "hobbies",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "birthday",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "photo",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "any"
+        },
+        {
+            "fieldName": "photoExt",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "hometown",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "hireDate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "skills",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "interests",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "currentRole",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "prjWorked",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "education",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "persNote",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "socialLinks",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200115174839",
+    "entityTableName": "wrkfrc_core_cf_extn",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "PeopleProfileMicroservices",
+    "applications": [
+        "people"
+    ],
+    "microserviceName": "PeopleProfileMicroservices"
+}

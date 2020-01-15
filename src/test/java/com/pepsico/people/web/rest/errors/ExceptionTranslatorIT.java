@@ -1,6 +1,6 @@
 package com.pepsico.people.web.rest.errors;
 
-import com.pepsico.people.PeopleProfileMicroservicesApp;
+import com.pepsico.people.PeopleApp;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Integration tests {@link ExceptionTranslator} controller advice.
  */
-@SpringBootTest(classes = PeopleProfileMicroservicesApp.class)
+@SpringBootTest(classes = PeopleApp.class)
 public class ExceptionTranslatorIT {
 
     @Autowired

@@ -14,27 +14,6 @@
 # http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
 # ===================================================================
 
-feign:
-  hystrix:
-    enabled: true
-  # client:
-  #     config:
-  #         default:
-  #             connectTimeout: 5000
-  #             readTimeout: 5000
-
-# See https://github.com/Netflix/Hystrix/wiki/Configuration
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          strategy: SEMAPHORE
-          # See https://github.com/spring-cloud/spring-cloud-netflix/issues/1330
-          # thread:
-          #     timeoutInMilliseconds: 10000
-  shareSecurityContext: true
-
 management:
   endpoints:
     web:
@@ -78,7 +57,7 @@ management:
 
 spring:
   application:
-    name: PeopleProfileMicroservices
+    name: people
   profiles:
     # The commented value for `active` can be replaced with valid Spring profiles to load.
     # Otherwise, it will be filled in by maven when building the JAR file
@@ -108,13 +87,13 @@ spring:
       enabled: false
   task:
     execution:
-      thread-name-prefix: people-profile-microservices-task-
+      thread-name-prefix: people-task-
       pool:
         core-size: 2
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: people-profile-microservices-scheduling-
+      thread-name-prefix: people-scheduling-
       pool:
         size: 2
   thymeleaf:
@@ -125,7 +104,6 @@ spring:
 
 server:
   servlet:
-    context-path: /services/${spring.application.name}
     session:
       cookie:
         http-only: true
@@ -143,7 +121,7 @@ info:
 
 jhipster:
   clientApp:
-    name: 'peopleProfileMicroservicesApp'
+    name: 'peopleApp'
   # By default CORS is disabled. Uncomment to enable.
   # cors:
   #     allowed-origins: "*"
@@ -153,11 +131,11 @@ jhipster:
   #     allow-credentials: true
   #     max-age: 1800
   mail:
-    from: PeopleProfileMicroservices@localhost
+    from: people@localhost
   swagger:
     default-include-pattern: /api/.*
-    title: PeopleProfileMicroservices API
-    description: PeopleProfileMicroservices API documentation
+    title: people API
+    description: people API documentation
     version: 0.0.1
     terms-of-service-url:
     contact-name:

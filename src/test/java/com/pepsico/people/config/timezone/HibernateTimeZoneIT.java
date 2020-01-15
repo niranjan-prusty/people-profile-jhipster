@@ -1,6 +1,6 @@
 package com.pepsico.people.config.timezone;
 
-import com.pepsico.people.PeopleProfileMicroservicesApp;
+import com.pepsico.people.PeopleApp;
 import com.pepsico.people.repository.timezone.DateTimeWrapper;
 import com.pepsico.people.repository.timezone.DateTimeWrapperRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -20,7 +20,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Integration tests for the UTC Hibernate configuration.
  */
-@SpringBootTest(classes = PeopleProfileMicroservicesApp.class)
+@SpringBootTest(classes = PeopleApp.class)
 public class HibernateTimeZoneIT {
 
     @Autowired

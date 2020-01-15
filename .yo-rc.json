@@ -1,11 +1,11 @@
 {
   "generator-jhipster": {
-    "applicationType": "microservice",
+    "applicationType": "monolith",
     "gitCompany": "",
-    "baseName": "PeopleProfileMicroservices",
+    "baseName": "people",
     "packageName": "com.pepsico.people",
     "packageFolder": "com/pepsico/people",
-    "serverPort": 8091,
+    "serverPort": "8080",
     "serviceDiscoveryType": false,
     "authenticationType": "jwt",
     "uaaBaseName": "../uaa",
@@ -21,11 +21,11 @@
     "buildTool": "maven",
     "useSass": true,
     "clientPackageManager": "npm",
-    "testFrameworks": [],
+    "testFrameworks": ["protractor"],
     "enableTranslation": true,
     "nativeLanguage": "en",
-    "languages": ["en"],
-    "clientFramework": "angularX",
+    "languages": ["en", "fr"],
+    "clientFramework": "react",
     "jhiPrefix": "jhi",
     "jhipsterVersion": "6.6.0",
     "jwtSecretKey": "OTMyYzc2OGFhNDhkYjFlNjQ3ZDdlNjkwMmVjMjkzNzAwNzhjMTI2NTVkM2JjODE0M2UzZTZlOWU5OTZiNTFjYTlmNTNjODI2ZDAwZTQ3ODRmNTY2M2Q3ZmQ0Y2U5ZWZlNmRjMjQ1MzNhNTNkNWMxOGUzMmNlNTIyZWMxYTQ4OGI=",
@@ -33,12 +33,16 @@
     "creationTimestamp": 1579110381700,
     "entitySuffix": "",
     "dtoSuffix": "DTO",
-    "otherModules": [],
     "blueprints": [],
-    "skipClient": true,
-    "skipUserManagement": true
+    "skipClient": false,
+    "skipUserManagement": false,
+    "skipServer": false,
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "otherModules": []
   },
   "git-provider": "GitHub",
   "git-company": "niranjan-prusty",
-  "repository-name": "people-profile-jhipster"
+  "repository-name": "people-profile-jhipster",
+  "entities": ["WrkfrcCoreCf", "WrkfrcCoreCfExtn"]
 }

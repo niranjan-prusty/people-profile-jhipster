@@ -1,0 +1,47 @@
+{
+  "peopleApp": {
+    "peopleProfileMicroservicesWrkfrcCoreCfExtn": {
+      "home": {
+        "title": "WrkfrcCoreCfExtns",
+        "createLabel": "Créer un nouveau Wrkfrc Core Cf Extn",
+        "createOrEditLabel": "Créer ou éditer un Wrkfrc Core Cf Extn",
+        "notFound": "Aucun Wrkfrc Core Cf Extn trouvé"
+      },
+      "created": "Un nouveau Wrkfrc Core Cf Extn a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Wrkfrc Core Cf Extn avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Wrkfrc Core Cf Extn avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Wrkfrc Core Cf Extn {{ id }} ?"
+      },
+      "detail": {
+        "title": "Wrkfrc Core Cf Extn"
+      },
+      "idFk": "Id Fk",
+      "funGroup": "Fun Group",
+      "building": "Building",
+      "floor": "Floor",
+      "mailDrop": "Mail Drop",
+      "assistant": "Assistant",
+      "altContactMobile": "Alt Contact Mobile",
+      "altContactEmail": "Alt Contact Email",
+      "altContactName": "Alt Contact Name",
+      "altPhoneNum": "Alt Phone Num",
+      "altLocNm": "Alt Loc Nm",
+      "ergMemberships": "Erg Memberships",
+      "pepsicoNetworks": "Pepsico Networks",
+      "hobbies": "Hobbies",
+      "birthday": "Birthday",
+      "photo": "Photo",
+      "photoExt": "Photo Ext",
+      "hometown": "Hometown",
+      "hireDate": "Hire Date",
+      "skills": "Skills",
+      "interests": "Interests",
+      "currentRole": "Current Role",
+      "prjWorked": "Prj Worked",
+      "education": "Education",
+      "persNote": "Pers Note",
+      "socialLinks": "Social Links"
+    }
+  }
+}
