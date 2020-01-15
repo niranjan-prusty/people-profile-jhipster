@@ -1,0 +1,116 @@
+application {
+  config {
+    baseName people,
+    applicationType monolith,
+    packageName com.pepsico.people,
+    prodDatabaseType mysql,
+    cacheProvider hazelcast,
+    buildTool maven,
+    clientFramework react,
+    useSass true,
+    testFrameworks [protractor]
+  }
+  entities *
+}
+
+/**
+ * The Employee entity.
+ */
+entity WrkfrcCoreCf {
+	Id Long required,
+	WrkfrcUniqIdVal String,
+	CrtdDt Instant,
+	MdfdD Instant,
+	FrstNm String,
+	SevFrstNm String,
+	MidlNm String,
+	SecLastNm String,
+	LastNm String,
+	WrkfrcPrfrdNm String,
+	WrkfrcPrfrdLm String,
+	PstnTtlNm String,
+    ScrtrId String,
+    SctrNm String,
+    DivsnId String,
+    DivsnNm String,
+    RgnId String,
+    RgnNm String,
+    BuId String,
+    BuNm String,
+    MuId String,
+    MuNm String,
+    JobFnctnCdv String,
+    JobFnctnNm String,
+    JobSbfnctnCdv String,
+    JobSbfnctnNm String,
+    MngrId String,
+    BusDeskTelnm String,
+    BusCellTelnm String,
+    FaxTelnm String,
+    WrkfrcEmailAddrVal String,
+    LocNm String,
+    LocAddrLn1Txt String,
+    LocAddrLn2Txt String,
+    LocAddrLn3Txt String,
+    LocAddrLn4Txt String,
+    LocCityNm String,
+    LocPstlAreaVal String,
+    LocTerrCdv String,
+    LocTerrNm String,
+    LocCtryCdv String,
+    LocCtryNm String,
+    CntrctrWrksiteCtryVal String,
+    LocTmznNm String,
+    LangPrfrdIsoNm String,
+    WrkfrcHireDt String,
+    WrkfrcOrignlHireDt String
+}
+
+entity WrkfrcCoreCfExtn {
+	IdFk Long required,
+	FunGroup String,
+	Building String,
+	Floor String,
+    MailDrop String,
+    Assistant String,
+    AltContactMobile String,
+    AltContactEmail String,
+    AltContactName String,
+    AltPhoneNum String,
+    AltLocNm String,
+    ErgMemberships String,
+    PepsicoNetworks String,
+    Hobbies String,
+    Birthday Instant,
+    Photo Blob,
+    PhotoExt String,
+    Hometown String,
+    HireDate String,
+    Skills String,
+    Interests String,
+    CurrentRole String,
+    PrjWorked String,
+    Education String,
+    PersNote String,
+    SocialLinks String
+}
+
+relationship OneToOne  {
+	WrkfrcCoreCf{WrkfrcCoreCfExtn} to WrkfrcCoreCfExtn,
+}
+
+relationship ManyToOne {
+	WrkfrcCoreCf{WrkfrcCoreCf(MngrId)} to WrkfrcCoreCf
+}
+
+// Set pagination options
+paginate WrkfrcCoreCfExtn, WrkfrcCoreCf with infinite-scroll
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
